@@ -1,0 +1,259 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        hr {
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+        p {
+            font-size: 10px;
+            color: #666;
+            font-family: Aldhabi, serif;
+            text-align: center;
+        }
+        p.green {
+            font-size: 8px;
+            color: green;
+            font-family: Batang, serif;
+        }
+        p.blue {
+            font-size: 6px;
+            color: blue;
+            font-family: "Book Antiqua", serif;
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 450px;
+            height: 500px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .btn-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn-container a {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+            border-radius: 4px;
+        }
+        .btn-container a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Título de la Página Principal</h1>
+        <h2>Encabezado</h2>
+        
+        <!-- Fondo animado (puede ser un gif animado o similar) -->
+        <img src="fondo_animado.gif" alt="Fondo animado" style="width: 100%; height: auto;">
+        
+        <hr>
+        
+        <!-- Botones -->
+        <div class="btn-container">
+            <a href="subpagina.html">Ir a Subpágina (Contacto)</a>
+            <a href="archivo.pdf" target="_blank">Descargar PDF</a>
+            <a href="https://www.otrapagina.com" target="_blank">Ir a Otra Página</a>
+        </div>
+        
+        <hr>
+        
+        <!-- Párrafo 1 -->
+        <p>Este es un párrafo de ejemplo con tres líneas, tamaño 10, color gris, letra Aldhabi.</p>
+        
+        <!-- Imagen -->
+        <img src="imagen.jpg" alt="Imagen de tamaño 450x500">
+        
+        <!-- Párrafo 2 -->
+        <p class="green">Otro párrafo de ejemplo con tres líneas, tamaño 8, color verde, letra Batang.</p>
+        
+        <!-- Tabla -->
+        <table>
+            <tr>
+                <th>Título 1ª columna Imagen</th>
+                <th>Título 2ª columna Precio</th>
+                <th>Título 3ª columna Audio</th>
+            </tr>
+            <tr>
+                <td><img src="imagen1.jpg" alt="Imagen 1"></td>
+                <td>$100</td>
+                <td><audio controls><source src="audio1.mp3" type="audio/mpeg"></audio></td>
+            </tr>
+            <tr>
+                <td><img src="imagen2.jpg" alt="Imagen 2"></td>
+                <td>$150</td>
+                <td><audio controls><source src="audio2.mp3" type="audio/mpeg"></audio></td>
+            </tr>
+            <tr>
+                <td><img src="imagen3.jpg" alt="Imagen 3"></td>
+                <td>$200</td>
+                <td><audio controls><source src="audio3.mp3" type="audio/mpeg"></audio></td>
+            </tr>
+        </table>
+        
+        <!-- Párrafo 3 -->
+        <p class="blue">Y un último párrafo de ejemplo con tres líneas, tamaño 6, color azul, letra Book Antiqua.</p>
+        
+        <!-- Video -->
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/video_id" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+    </div>
+</body>
+</html>
+Subpágina (subpagina.html)
+html
+Copiar código
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subpágina - Contacto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form textarea {
+            height: 100px;
+        }
+        form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .btn-back {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn-back a {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        .btn-back a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Título de la Subpágina</h1>
+        <h2>Encabezado</h2>
+        
+        <!-- Fondo imagen (reemplaza la ruta con tu imagen) -->
+        <img src="fondo_subpagina.jpg" alt="Fondo de la Subpágina" style="width: 100%; height: auto;">
+        
+        <form action="procesar_formulario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            
+            <!-- Otros tipos de campos según tu necesidad -->
+            
+            <input type="submit" value="ENVIAR">
+        </form>
+        
+        <div class="btn-back">
+            <a href="index.html">Regresar a la página principal</a>
+        </div>
+    </div>
+</body>
+</html>
